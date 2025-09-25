@@ -1,0 +1,16 @@
+seed: 0
+exp: "well"
+T: 1000
+D: 2
+batch_size: 16
+epsilon: 1e-5
+K: 2
+nwarmups: 5
+nreps: 5
+mode: "offline"
+alg: "quasi"
+hydra:
+  run:
+    dir: .
+  job:
+    chdir: False

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "src"
+version = "0.1.0"
+description = "A Unifying Framework for Parallelizing Sequential Models with Linear Dynamical Systems"
+dependencies = [
+    "equinox",
+    "ipykernel",
+    "matplotlib",
+    "tqdm",
+    "scipy",
+    "wandb",
+    "pytest",
+    "hydra-core",
+    "lightning",
+    "packaging", # to make the jax installs happy
+    "seaborn",
+]
+
+[tool.setuptools]
+packages = { find = { where = ["src"] } }

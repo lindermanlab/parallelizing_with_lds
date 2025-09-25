@@ -1,0 +1,31 @@
+# config for Figure 1: the S5 word problem
+command:
+  - ${env}
+  - python
+  - ${program}
+  - ${args_no_hyphens}
+method: grid
+program: harness.py
+parameters:
+  alg:
+    values: ['quasi', 'deer', 'seq', 'picard']
+  D:
+    values: [5]
+  T:
+    values: [100, 300, 1000, 3000, 10000, 30000]
+  seed:
+    values: [0,1,2,3,4,5,6,7,8,9]
+  exp:
+    values: ["s5_word"]
+  batch_size:
+    value: 16
+  epsilon:
+    value: 1e-5
+  nwarmups:
+    value: 5
+  nreps:
+    value: 5
+  mode:
+    value: "online"
+project: lds
+name: s5_word_problem
