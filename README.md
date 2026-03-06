@@ -1,5 +1,7 @@
 # A Unifying Framework for Parallelizing Sequential Models with Linear Dynamical Systems
 
+**Check out an even simpler [quickstart-repo](https://github.com/lindermanlab/micro_deer/tree/main), including this [quickstart-notebook](https://github.com/lindermanlab/micro_deer/blob/main/nbs/demo.ipynb)**
+
 This repository contains the code to accompany the paper "A Unifying Framework for Parallelizing Sequential Models with Linear Dynamical Systems." The primary contributions of our paper are unifying different fixed-point algorithms (Newton, quasi-Newton, Picard, and Jacobi) in the framework of linear dynamical systems (LDS), and demonstrating the effectiveness of these algorithms in parallelizing stateful (Markov) models.
 
 We focus on parallelizing [state space models](https://probml.github.io/ssm-book/root.html), i.e. models of the form
